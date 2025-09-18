@@ -1,0 +1,28 @@
+{
+  "name": "Cybersecurity Unified Platform",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [8501],
+  // "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.formatting.provider": "black",
+        "python.formatting.blackArgs": [
+          "--line-length",
+          "88"
+        ],
+        "editor.tabSize": 4
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "streetsidesoftware.code-spell-checker",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
