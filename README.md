@@ -30,18 +30,22 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("🛡️ CyberToolkit: Security Analysis Workbench")
+st.title("🛡️ CyberToolkit")
 ```
 
 ## **🚀 Quick Start**
 
-1. Build and run the container:
+Build and run the container:
 
 ```python
-docker compose up -d
+# Build image
+docker build -t my-streamlit-app .
+
+# Run container
+docker run -p 8501:8501 my-streamlit-app
 ```
 
-1. Access the toolkit:
+Access the toolkit:
 
 ```python
 $BROWSER "http://localhost:8501"

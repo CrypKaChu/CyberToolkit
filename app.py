@@ -8,9 +8,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-"""
-streamlit run app.py --server.port=8501 --server.address=0.0.0.0
-"""
 
 
 # --- Main app structure ---
