@@ -37,7 +37,7 @@ st.title("🛡️ CyberToolkit")
 
 Build and run the container:
 
-```python
+```
 # Build image
 docker build -t my-streamlit-app .
 
@@ -47,8 +47,8 @@ docker run -p 8501:8501 my-streamlit-app
 
 Access the toolkit:
 
-```python
-$BROWSER "http://localhost:8501"
+```
+http://localhost:8501
 ```
 
 ## **💻 Development Stack**
